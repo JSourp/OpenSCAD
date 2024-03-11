@@ -99,7 +99,7 @@ module bodyMain() {
 module bodyBottom() {
     translate([0, 0, height-.1]) difference() {
         customSphere();
-        cylinder(d=holeDiameter, h = 12);
+        cylinder(d=holeDiameter*3, h = 12);
     }
 }
 
