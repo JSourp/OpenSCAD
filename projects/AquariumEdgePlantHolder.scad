@@ -32,7 +32,7 @@ module customSphere(diameter = base, height = 10, isHollow = true, wallWidth = w
             difference() {
                 sphere(r = radius, $fn = smoothness);
                 translate([0, 0, wallWidth])
-                    sphere(r = radius - wallWidth, $fn = smoothness);
+                    #sphere(r = radius - wallWidth, $fn = smoothness);
             }
         } else {
             // Solid sphere
@@ -99,7 +99,7 @@ module bodyMain() {
 module bodyBottom() {
     translate([0, 0, height-.1]) difference() {
         customSphere();
-        cylinder(d=holeDiameter, h = 12);
+        cylinder(d=holeDiameter*3, h = 12);
     }
 }
 
