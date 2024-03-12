@@ -5,7 +5,7 @@ $fn = 100;
 
 // Parameters
 height = 100;
-edgeDepth = 4;
+edgeDepth = 4; //4-rimless, 32-rimmed
 base = 20;
 holeDiameter = 4;
 wallThickness = 1;
